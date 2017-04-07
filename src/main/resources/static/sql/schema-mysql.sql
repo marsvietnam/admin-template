@@ -4,6 +4,8 @@ drop table if exists roles;
 create table roles (
 	id int auto_increment,
 	name varchar(45) not null,
+	searchable_name varchar(45) not null,
+	enabled tinyint(1) not null default 1,
 	description varchar(255),
 	created_by varchar(45),
     created_on timestamp default now(),
