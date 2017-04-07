@@ -6,6 +6,7 @@ var app = app || {};
 
 $('#user-table').bootstrapTable({
 	pagination: true,
+	pageSize: 3,
 	pageList: [10, 25, 50, 100],
 	columns: [{
 		field: 'username',
